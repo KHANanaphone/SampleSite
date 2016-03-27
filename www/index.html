@@ -1,0 +1,48 @@
+<html ng-app='igrcApp'>
+
+<head>
+
+    <title>XXXXXX XXXXXX Corp.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/css/home/body.css">
+    <link rel="stylesheet" href="/css/home/splash.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/solutions.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/_footer.css">
+    <link rel="stylesheet" href="/css/_header.css">
+    <!-- endinject -->
+
+</head>
+
+<body>
+
+    <div ng-controller='igrcController'>
+
+        <div id="header" ng-include='"pages/_header.html"'>
+        </div>
+
+        <div ng-view></div>
+
+        <div id="footer" ng-include='"pages/_footer.html"'>
+        </div>
+    </div>
+
+    <!-- inject:js -->
+    <script src="/js/components/angular/angular.js"></script>
+    <script src="/js/components/angular-route/angular-route.js"></script>
+    <script src="/js/components/ui-bootstrap-tpls-1.1.0.min.js"></script>
+    <script src="/js/components/ngFitText/ng-FitText.min.js"></script>
+    <script src="/js/app/app.js"></script>
+    <script src="/js/app/controller.js"></script>
+    <!-- endinject -->
+
+</body>
+
+</html>
