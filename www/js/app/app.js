@@ -1,26 +1,14 @@
 (function(){
 
-    var app = angular.module('igrcApp', [
+    var app = angular.module('sample-app', [
       'ngRoute', 'ui.bootstrap', 'ngFitText'
     ]);
 
     app.pages = {
         'home': {name: 'Home', url: '', html: 'home.html'},
-        'about': {name: 'About', url: 'about', html: 'about.html'},
-        'solutions': {name: 'Solutions', url: 'solutions', html: 'solutions.html', subpages: [
-            {name: 'Web Application Development', url: 'web'},
-            {name: 'Biometric Attendance Systems', url: 'bio'},
-            {name: 'Third Party Integration', url: 'third'},
-            {name: 'Statistics Studies & Surveys', url: 'stats'},
-        ]},
-        'consultancy': {name: 'Consultancy', url: 'consultancy', html: 'consultancy.html', subpages: [
-            {name: 'Business Continuity Management', url: 'bcm'},
-            {name: 'Project Manager', url: 'pm'},
-            {name: 'Information Security', url: 'is'},
-            {name: 'Certifications', url: 'certs'},
-
-        ]},
-        'contact': {name: 'Contact Us', url: 'contact', html: 'contact.html'}
+        'products': {name: 'Products', url: 'products', html: 'products.html'},
+        'news': {name: 'News', url: 'news', html: 'news.html'},
+        'about': {name: 'About', url: 'about', html: 'about.html'}
     }
 
     app.config(['$routeProvider', function($routeProvider){
@@ -43,8 +31,7 @@
         function addWhen(page){
 
             $routeProvider.when('/' + page.url, {
-                templateUrl: 'pages/' + page.html,
-                controller: 'igrcController'
+                templateUrl: 'pages/' + page.html
             });
         };
     }]);

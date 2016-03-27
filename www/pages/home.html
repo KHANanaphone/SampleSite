@@ -1,34 +1,32 @@
-<div id="home">
-    <div class='splash'>
-        <div class='container clearfix'>
-            <div class='positioner'>
-                <div class='splash-text'>
-                    <div data-fittext='0.8'>
-                        <span class='title'>Consultancy Services and Solutions</span>
-                        <span class='bar'></span>
-                        <span class='tagline'>Insert a tagline here, background is placeholder</span>
-                    </div>
-                </div>
-            </div>
+<div id='home' class='clearfix'>
+
+    <div class='breaking'  ng-click='redirect("news")'>
+        <div class='text container'>
+            <span class='title'>Breaking News Title Here</span> description description description
         </div>
     </div>
 
-    <div class='services'>
-        <div class='container'>
-            <h1>Our Services</h1>
-            <span class='bar'></span>
+    <div class='container content'>
 
-            <div class='col-xs-8 col-xs-offset-2 col-md-offset-2 col-md-4 service' ng-click='redirect("solutions")'>
-                <div class='icon' ng-include="'/images/thumb.svg'"></div>
-                <span class='title'>Solutions</span>
-                <div class='service-desc'>Description here la dee da etc etc zippity zoo bippity boo</div>
+        <div class='ticker-chart-row '>
+
+            <div class='ticker col-xs-12 col-md-6'>
+
+                <iframe src="http://www.appuonline.com/gadgets/gainers_g.html" frameborder="0" scrolling="no"></iframe>
+
             </div>
-            <div class='col-xs-8 col-xs-offset-2 col-md-offset-0 col-md-4 service' ng-click='redirect("consultancy")'>
-                <div class='icon' ng-include="'/images/thumb.svg'"></div>
-                <span class='title'>Consultancy</span>
-                <div class='service-desc'>Description here la dee da etc etc zippity zoo bippity boo</div>
+
+            <div ng-controller='stock-controller' class='chart-section col-xs-12 col-md-6'>
+
+                <div class='dropdowns'>
+                    
+                </div>
+                <div id='stock-chart'>
+                </div>
+
             </div>
         </div>
+
     </div>
 
 </div>

@@ -6,6 +6,10 @@ html, body {
     margin: 0 auto;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .service{
     cursor: pointer;
     transition: 0.3s ease;

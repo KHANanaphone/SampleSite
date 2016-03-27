@@ -1,15 +1,12 @@
 #header {
 
     font-family: 'Arimo', sans-serif;
-    background-color: #222;
+    background-color: #00E;
     width: 100%;
     position: relative;
     border-bottom: 3px solid #AAA;
     padding-bottom: 2px;
-
-    /*position: fixed;
-    z-index: 10;
-    top: 0;*/
+    background-image: url('/images/diagmonds-light.png');
 }
 
 #header .menu{
@@ -36,13 +33,15 @@
 #header .menu-item:hover,
 #header .submenu-item:hover{
 
-    background-color: #6C7C8E;
+    background-color: #311EA5;
 }
 
 #header .menu-item.active,
 #header .submenu-item.active{
 
-    background-color: #444;
+    background-color: white;
+    border: 1px solid #88B;
+    color: blue;
 }
 
 #header .menu-item:hover .dropdown .submenu,
@@ -82,12 +81,12 @@
     display: inline-block;
     text-decoration: none;
     color: white;
-    transition: background-color ease 0.5s;
+    transition: background-color ease 0.3s;
 }
 
 #header .title:hover{
 
-    background-color: #444;
+    background-color: #311EA5;
 }
 
 #header .text{

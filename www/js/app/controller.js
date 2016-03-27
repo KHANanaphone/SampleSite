@@ -1,8 +1,8 @@
 (function(){
 
-    var app = angular.module('igrcApp');
+    var app = angular.module('sample-app');
 
-    app.controller('igrcController', ['$scope', '$location', function($scope, $location){
+    app.controller('nav-controller', ['$scope', '$location', function($scope, $location){
 
         $scope.redirect = function(page){
 

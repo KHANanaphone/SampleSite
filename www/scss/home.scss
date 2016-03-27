@@ -1,0 +1,56 @@
+#home {
+
+    .breaking {
+
+        padding: 2px 0px;
+        border-bottom: 1px solid #BBB;
+        transition: background-color 0.3s ease;
+        cursor: pointer;
+
+        .text {
+
+            font-family: 'Arimo', sans-serif;
+            font-size: 1em;
+            color: #777;
+
+            .title {
+
+                font-size: 1.2em;
+                font-weight: bold;
+                color: #555;
+                text-transform: uppercase;
+            }
+        }
+
+        &:hover {
+
+            background-color: #DFDEFF;
+        }
+    }
+
+    .content {
+
+        padding-top: 20px;
+        height: 435px;
+    }
+
+    .ticker {
+
+        iframe {
+
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    .chart-section {
+
+        height: 100%;
+
+        #stock-chart {
+
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

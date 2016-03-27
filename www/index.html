@@ -1,4 +1,4 @@
-<html ng-app='igrcApp'>
+<html ng-app='sample-app'>
 
 <head>
 
@@ -8,11 +8,10 @@
     <link rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- inject:css -->
-    <link rel="stylesheet" href="/css/home/body.css">
-    <link rel="stylesheet" href="/css/home/splash.css">
     <link rel="stylesheet" href="/css/about.css">
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/contact.css">
+    <link rel="stylesheet" href="/css/home.css">
     <link rel="stylesheet" href="/css/solutions.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/_footer.css">
@@ -23,7 +22,7 @@
 
 <body>
 
-    <div ng-controller='igrcController'>
+    <div ng-controller='nav-controller'>
 
         <div id="header" ng-include='"pages/_header.html"'>
         </div>
@@ -38,9 +37,11 @@
     <script src="/js/components/angular/angular.js"></script>
     <script src="/js/components/angular-route/angular-route.js"></script>
     <script src="/js/components/ui-bootstrap-tpls-1.1.0.min.js"></script>
+    <script src="/js/components/zingchart.min.js"></script>
     <script src="/js/components/ngFitText/ng-FitText.min.js"></script>
     <script src="/js/app/app.js"></script>
     <script src="/js/app/controller.js"></script>
+    <script src="/js/app/stock_controller.js"></script>
     <!-- endinject -->
 
 </body>

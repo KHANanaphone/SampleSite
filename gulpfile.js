@@ -1,7 +1,13 @@
 var gulp = require('gulp')
 , inject = require('gulp-inject')
 , nodemon = require('gulp-nodemon')
-, series = require('stream-series');
+, series = require('stream-series')
+, sass = require('gulp-ruby-sass');
+
+gulp.task('sass', function () {
+  return sass('./www/scss/**/*.scss')
+    .pipe(gulp.dest('./www/css'))
+});
 
 gulp.task('injectfiles', function() {
 
@@ -35,10 +41,12 @@ gulp.task('injectfiles', function() {
 
 gulp.task('start', function () {
   nodemon({ script: 'server.js'
-          , ext: 'html ejs js css'
+          , ext: 'html ejs js scss'
           , ignore: ['index.html']
-          , tasks: ['injectfiles'] })
+          , tasks: ['sass', 'injectfiles'] })
     .on('restart', function () {
       console.log('restarted!')
     })
 });
+
+gulp.task('default', ['sass', 'injectfiles', 'start']);

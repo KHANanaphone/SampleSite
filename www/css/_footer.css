@@ -1,7 +1,7 @@
 #footer {
 
     font-family: 'Raleway', sans-serif;
-    background-color: #222;
+    background-color: #4231A5;
     padding: 1em;
     margin-top: 2em;
     color: white;
@@ -11,6 +11,7 @@
 #footer .menu {
 
     margin-bottom: 0;
+    padding-left: 0;
 }
 
 #footer .menu-item{
@@ -19,21 +20,19 @@
     font-weight: bold;
     font-size: 1.2em;
     list-style-type: none;
-
-        color: #777;
+    color: #DDD;
 }
 
 #footer .menu-item:hover{
 
-    color: #9EFF9E;
+    color: #FFF;
 }
 
 #footer .contacts {
 
     text-align: center;
     font-size: 1.5em;
-    padding-top: 0.8em;
-        color: #CCC;
+    color: #CCC;
 }
 
 #footer .contacts i{
@@ -45,17 +44,18 @@
 
 #footer .hoverglow{
 
-    transition: color 0.4s ease;
+    transition: color 0.3s ease;
     cursor: pointer;
+    color: #CCC;
 }
 
 #footer .hoverglow:hover{
-    color: #9EFF9E;
+    color: white;
 }
 
 #footer .credits {
 
-    color: #777;
+    color: #CCC;
     text-align: right;
 }
 
