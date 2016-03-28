@@ -31,7 +31,7 @@
     .content {
 
         padding-top: 20px;
-        height: 435px;
+        height: 300px;
     }
 
     .ticker {
@@ -41,6 +41,8 @@
             height: 100%;
             width: 100%;
         }
+
+        margin-bottom: 20px;
     }
 
     .chart-section {
@@ -49,8 +51,79 @@
 
         #stock-chart {
 
-            height: 100%;
+            height: calc(100% - 50px);
             width: 100%;
+        }
+
+        .dropdown {
+
+            padding: 0px 4px;
+            display: inline-block;
+
+            button {
+                width: 100%;
+            }
+
+            li {
+
+                padding: 2px 5px;
+            }
+        }
+    }
+
+    .news-section {
+
+        border-top: 1px solid #AAA;
+        margin: 40px 0px;
+        position: relative;
+        padding-top: 40px;
+
+        .news-header{
+
+            position: absolute;
+            top: -28px;
+            left: 40px;
+            font-size: 2.5em;
+            font-weight: bold;
+            font-family: 'Raleway', sans-serif;
+            background-color: white;
+            padding: 0px 20px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+
+            &:hover{
+
+                color: #88B;
+            }
+        }
+
+        .news-block {
+
+            height: 300px;
+            color: white;
+            padding: 25px;
+            cursor: pointer;
+
+            &:hover {
+                opacity: 0.8;
+            }
+
+            .inner {
+                padding: 25px;
+                height: 100%;
+            }
+
+            .black {
+                background-color: black;
+            }
+
+            .blue {
+                background-color: #29299C;
+            }
+        }
+
+        .more {
+            float: right;
         }
     }
 }

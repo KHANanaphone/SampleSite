@@ -34,7 +34,8 @@ gulp.task('injectfiles', function() {
 
     target.pipe(inject(series(
         prereqStream,
-        componentsStream, appStream), {ignorePath: 'www'}))
+        componentsStream,
+        appStream), {ignorePath: 'www'}))
       .pipe(gulp.dest('./www'));
 
 });

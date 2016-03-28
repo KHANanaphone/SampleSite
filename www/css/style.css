@@ -96,3 +96,18 @@ html, body {
 
     font-weight: 300;
 }
+
+.bgcolorease{
+
+    transition: background-color 0.3s ease;
+}
+
+.opacityease{
+
+    transition: opacity 0.3s ease;
+}
+
+.colorease{
+
+    transition: color 0.3s ease;
+}

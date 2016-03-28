@@ -8,7 +8,7 @@
 
     <div class='container content'>
 
-        <div class='ticker-chart-row '>
+        <div class='ticker-chart-row clearfix'>
 
             <div class='ticker col-xs-12 col-md-6'>
 
@@ -19,12 +19,53 @@
             <div ng-controller='stock-controller' class='chart-section col-xs-12 col-md-6'>
 
                 <div class='dropdowns'>
-                    
+
+                    <div class='dropdown' uib-dropdown ng-repeat='(category, options) in dropdownOptions'>
+
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdown-{{category}}"
+                            uib-dropdown-toggle>
+                          {{options.selected}}
+                          <span class="caret"></span>
+                        </button>
+
+                        <ul class="dropdown-menu" uib-dropdown-menu  aria-labelledby="dropdown-{{category}}">
+                            <li role='menuItem' ng-repeat="o in options.options track by $index">
+                                <a href='javascript:void(0);'>{{o}}</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
                 </div>
+
                 <div id='stock-chart'>
                 </div>
 
             </div>
+        </div>
+
+        <div class='news-section'>
+
+            <div class='news-header colorease' ng-click='redirect("news")'>Top News</div>
+
+            <div class='news-block opacityease col-xs-12 col-sm-6'>
+                <div class='inner black' ng-click='redirect("news")'>
+                    <div class='news-title'>News headline here</div>
+                    <div class='news-content'>News content here news content here news content here</div>
+                </div>
+            </div>
+
+            <div class='news-block opacityease col-xs-12 col-sm-6'>
+                <div class='inner blue' ng-click='redirect("news")'>
+                    <div class='news-title'>News headline here</div>
+                    <div class='news-content'>News content here news content here news content here</div>
+                </div>
+            </div>
+
+
+            <a class='more' href='/#/news'>More news</a>
+
+
         </div>
 
     </div>
