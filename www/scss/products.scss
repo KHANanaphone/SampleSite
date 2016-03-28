@@ -1,0 +1,113 @@
+#products {
+
+    position: relative;
+
+    .top-right {
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px 10px;
+
+        div {
+
+            display: inline;
+            vertical-align: top;
+        }
+
+        .cart {
+
+            font-family: 'Raleway', sans-serif;
+            font-size: 1.3em;
+            padding-right: 40px;
+
+            i {
+                font-size: 1.4em;
+                padding-right: 8px;
+            }
+        }
+
+        .login {
+
+            font-family: 'Arimo', sans-serif;
+            font-size: 1em;
+            padding-right: 20px;
+            color: #888;
+
+            .name {
+
+                color: #333;
+                font-size: 1.1em;
+                font-weight: bold;
+                vertical-align: super;
+                padding-left: 5px;
+            }
+        }
+    }
+
+    .products-menu {
+
+        border-bottom: 1px solid #AAD;
+        padding-top: 50px;
+
+        .product-tab {
+
+            display: inline-block;
+            font-family: 'Arimo', sans-serif;
+            padding: 5px 25px 10px 5px;
+            font-weight: bold;
+            cursor: pointer;
+
+            &:hover {
+
+                color: #7E78D2;
+            }
+        }
+    }
+
+    .product-description {
+
+        font-family: 'Raleway', sans-serif;
+        color: #888;
+        font-size: 1.2em;
+
+        .splash {
+
+            background-color: #DDF;
+            background-image: url('/images/dark-mosaic.png');
+            position: relative;
+
+            img {
+                margin: 50px;
+                width: 300px;
+                height: 300px;
+            }
+
+            .desc {
+
+                position: absolute;
+                top: 45%;
+                right: 250px;
+                font-size: 2.5em;
+                color: white;
+                font-weight: 800;
+
+               text-shadow:
+                   3px 3px 0 #000,
+                 -1px -1px 0 #000,
+                  1px -1px 0 #000,
+                  -1px 1px 0 #000,
+                   1px 1px 0 #000;
+            }
+        }
+
+        .text {
+            width: 600px;
+            margin: 40px auto 20px;
+        }
+
+        .buynow {
+            text-align: center;
+        }
+    }
+}

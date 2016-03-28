@@ -1,0 +1,42 @@
+<div id='products' ng-controller='products-controller'>
+
+    <div class='top-right'>
+        <div class='cart'>
+            <i class='fa fa-shopping-cart'></i> $49.95
+        </div>
+        <div class='login'>
+            Logged in as <span class='name'>Steve115</span>
+        </div>
+    </div>
+
+    <div class='container'>
+
+        <div class='products-menu'>
+            <div class='product-tab colorease' ng-repeat='(name, info) in products'>
+                {{ name }}
+            </div>
+        </div>
+
+        <div class='product-description'>
+            <div class='splash'>
+                <img src='/images/chart.png'>
+
+                <span class='desc'>
+                    PRODUCT A
+                </span>
+            </div>
+
+            <div class='text'>
+                Description of Product A. Description of Product A. Description of Product A.
+                Description of Product A. Description of Product A. Description of Product A.
+                Description of Product A. Description of Product A. Description of Product A.
+                Description of Product A. Description of Product A. Description of Product A.
+            </div>
+            <div class='buynow'>
+                <button type='button' class='btn btn-success'>Buy Now</button>
+            </div>
+            
+        </div>
+
+    </div>
+</div>

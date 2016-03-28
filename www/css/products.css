@@ -1,0 +1,64 @@
+#products {
+  position: relative; }
+  #products .top-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px 10px; }
+    #products .top-right div {
+      display: inline;
+      vertical-align: top; }
+    #products .top-right .cart {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.3em;
+      padding-right: 40px; }
+      #products .top-right .cart i {
+        font-size: 1.4em;
+        padding-right: 8px; }
+    #products .top-right .login {
+      font-family: 'Arimo', sans-serif;
+      font-size: 1em;
+      padding-right: 20px;
+      color: #888; }
+      #products .top-right .login .name {
+        color: #333;
+        font-size: 1.1em;
+        font-weight: bold;
+        vertical-align: super;
+        padding-left: 5px; }
+  #products .products-menu {
+    border-bottom: 1px solid #AAD;
+    padding-top: 50px; }
+    #products .products-menu .product-tab {
+      display: inline-block;
+      font-family: 'Arimo', sans-serif;
+      padding: 5px 25px 10px 5px;
+      font-weight: bold;
+      cursor: pointer; }
+      #products .products-menu .product-tab:hover {
+        color: #7E78D2; }
+  #products .product-description {
+    font-family: 'Raleway', sans-serif;
+    color: #888;
+    font-size: 1.2em; }
+    #products .product-description .splash {
+      background-color: #DDF;
+      background-image: url("/images/dark-mosaic.png");
+      position: relative; }
+      #products .product-description .splash img {
+        margin: 50px;
+        width: 300px;
+        height: 300px; }
+      #products .product-description .splash .desc {
+        position: absolute;
+        top: 45%;
+        right: 250px;
+        font-size: 2.5em;
+        color: white;
+        font-weight: 800;
+        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+    #products .product-description .text {
+      width: 600px;
+      margin: 40px auto 20px; }
+    #products .product-description .buynow {
+      text-align: center; }
