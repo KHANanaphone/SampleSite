@@ -4,8 +4,6 @@
 
     app.controller('stock-controller', ['$scope', function($scope){
 
-        STOCKS.loadStockChart();
-
         $scope.dropdownOptions = {
 
             category: {
@@ -29,10 +27,8 @@
 
         for(var cat in $scope.dropdownOptions){
 
-            $scope.dropdownOptions[cat].selected = $scope.dropdownOptions[cat].options[0];            
+            $scope.dropdownOptions[cat].selected = $scope.dropdownOptions[cat].options[0];
         }
-
-
 
     }]);
 

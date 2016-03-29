@@ -2,7 +2,7 @@
 
     <div class='breaking'  ng-click='redirect("news")'>
         <div class='text container'>
-            <span class='title'>Breaking News Title Here</span> description description description
+            <span class='title'>Breaking News Title Here</span> description description description description description description description
         </div>
     </div>
 
@@ -11,9 +11,7 @@
         <div class='ticker-chart-row clearfix'>
 
             <div class='ticker col-xs-12 col-md-6'>
-
-                <iframe src="http://www.appuonline.com/gadgets/gainers_g.html" frameborder="0" scrolling="no"></iframe>
-
+                <img src='/images/stockchart.PNG'>
             </div>
 
             <div ng-controller='stock-controller' class='chart-section col-xs-12 col-md-6'>
@@ -39,35 +37,41 @@
                 </div>
 
                 <div id='stock-chart'>
+                    <img src='/images/stocktick.png'>
                 </div>
 
             </div>
         </div>
 
-        <div class='news-section'>
+        <div ng-controller='news-controller' class='news-section clearfix'>
 
-            <div class='news-header colorease' ng-click='redirect("news")'>Top News</div>
+            <div class='col-sm-8 col-xs-12 feed-section'>
 
-            <div class='news-block opacityease col-xs-12 col-sm-6'>
-                <div class='inner black' ng-click='redirect("news")'>
-                    <div class='news-title'>News headline here</div>
-                    <div class='news-content'>News content here news content here news content here</div>
+                <div class='news-header colorease' ng-click='redirect("news")'>My News Feed</div>
+
+                <div class='news-block bgcolorease wow slideInUp' ng-click='redirect("news")' ng-repeat='a in repeat(20)'>
+                    <div class='news-image col-xs-12 col-sm-6'>
+                        <img src='/images/imagesample{{a % 4}}.jpg'>
+                    </div>
+                    <div class='news-desc col-xs-12 col-sm-6'>
+                        <div class='news-title'>News headline here</div>
+                        <div class='news-content'>News content here news content here news content here</div>
+                    </div>
                 </div>
+
             </div>
 
-            <div class='news-block opacityease col-xs-12 col-sm-6'>
-                <div class='inner blue' ng-click='redirect("news")'>
-                    <div class='news-title'>News headline here</div>
+            <div class='col-sm-4 col-xs-12 top-news-section'>
+
+                <div class='news-header' ng-click='redirect("news")'>Top News</div>
+
+                <div class='block opacityease wow slideInRight' ng-click='redirect("news")' ng-repeat='a in repeat(20)'>
+                    <div class='news-title'>Top news headline here {{a}}</div>
                     <div class='news-content'>News content here news content here news content here</div>
                 </div>
+
             </div>
-
-
-            <a class='more' href='/#/news'>More news</a>
-
 
         </div>
-
     </div>
-
 </div>

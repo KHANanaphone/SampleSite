@@ -1,5 +1,5 @@
 #home .breaking {
-  padding: 2px 0px;
+  padding: 10px 0px;
   border-bottom: 1px solid #BBB;
   transition: background-color 0.3s ease;
   cursor: pointer; }
@@ -14,34 +14,35 @@
       text-transform: uppercase; }
   #home .breaking:hover {
     background-color: #DFDEFF; }
+#home .ticker-chart-row {
+  border-bottom: 4px solid #DDF;
+  border-bottom-style: double;
+  margin-bottom: 65px; }
 #home .content {
-  padding-top: 20px;
-  height: 300px; }
+  padding-top: 20px; }
 #home .ticker {
-  margin-bottom: 20px; }
-  #home .ticker iframe {
-    height: 100%;
+  margin-bottom: 20px;
+  border: 3px outset #DDF;
+  padding: 20px;
+  border-style: outset; }
+#home .chart-section #stock-chart {
+  padding-top: 50px; }
+  #home .chart-section #stock-chart img {
+    height: 310px; }
+#home .chart-section .dropdown {
+  padding: 0px 4px;
+  display: inline-block; }
+  #home .chart-section .dropdown button {
     width: 100%; }
-#home .chart-section {
-  height: 100%; }
-  #home .chart-section #stock-chart {
-    height: calc(100% - 50px);
-    width: 100%; }
-  #home .chart-section .dropdown {
-    padding: 0px 4px;
-    display: inline-block; }
-    #home .chart-section .dropdown button {
-      width: 100%; }
-    #home .chart-section .dropdown li {
-      padding: 2px 5px; }
+  #home .chart-section .dropdown li {
+    padding: 2px 5px; }
 #home .news-section {
-  border-top: 1px solid #AAA;
-  margin: 40px 0px;
-  position: relative;
-  padding-top: 40px; }
+  margin: 40px 0px; }
+  #home .news-section .feed-section {
+    border-right: 1px solid #AAA; }
   #home .news-section .news-header {
     position: absolute;
-    top: -28px;
+    top: -40px;
     left: 40px;
     font-size: 2.5em;
     font-weight: bold;
@@ -49,22 +50,50 @@
     background-color: white;
     padding: 0px 20px;
     cursor: pointer;
-    transition: color 0.3s ease; }
+    transition: color 0.3s ease;
+    border: 1px solid #AAA; }
     #home .news-section .news-header:hover {
       color: #88B; }
   #home .news-section .news-block {
     height: 300px;
-    color: white;
-    padding: 25px;
-    cursor: pointer; }
+    padding: 15px;
+    margin: 15px;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif; }
     #home .news-section .news-block:hover {
-      opacity: 0.8; }
+      background-color: #EEF; }
+    #home .news-section .news-block .news-image {
+      text-align: center;
+      padding: 0; }
+    #home .news-section .news-block .news-desc {
+      padding-left: 20px; }
+    #home .news-section .news-block img {
+      max-width: 100%;
+      height: 100%; }
     #home .news-section .news-block .inner {
       padding: 25px;
       height: 100%; }
+    #home .news-section .news-block .news-title {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px; }
     #home .news-section .news-block .black {
       background-color: black; }
     #home .news-section .news-block .blue {
       background-color: #29299C; }
   #home .news-section .more {
     float: right; }
+#home .top-news-section {
+  padding-top: 30px; }
+  #home .top-news-section .block {
+    font-family: 'Arimo', sans-serif;
+    border-top: 1px dotted #AAA;
+    border-bottom: 1px dotted #AAA;
+    padding: 20px;
+    cursor: pointer; }
+    #home .top-news-section .block:hover {
+      opacity: 0.7; }
+    #home .top-news-section .block .news-title {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px; }
