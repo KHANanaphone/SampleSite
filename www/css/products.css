@@ -27,7 +27,7 @@
         vertical-align: super;
         padding-left: 5px; }
   #products .products-menu {
-    border-bottom: 1px solid #AAD;
+    border-bottom: 1px solid #C5C5E6;
     padding-top: 50px; }
     #products .products-menu .product-tab {
       display: inline-block;
@@ -35,30 +35,69 @@
       padding: 5px 25px 10px 5px;
       font-weight: bold;
       cursor: pointer; }
-      #products .products-menu .product-tab:hover {
+      #products .products-menu .product-tab:hover, #products .products-menu .product-tab.selected {
         color: #7E78D2; }
-  #products .product-description {
+  #products .product {
     font-family: 'Raleway', sans-serif;
     color: #888;
-    font-size: 1.2em; }
-    #products .product-description .splash {
+    font-size: 1.2em;
+    opacity: 1;
+    transition: opacity 0.2s ease; }
+    #products .product.faded {
+      opacity: 0; }
+    #products .product .splash {
       background-color: #DDF;
-      background-image: url("/images/dark-mosaic.png");
-      position: relative; }
-      #products .product-description .splash img {
-        margin: 50px;
-        width: 300px;
-        height: 300px; }
-      #products .product-description .splash .desc {
+      position: relative;
+      height: 500px;
+      background-size: cover; }
+      #products .product .splash .splash-box {
+        font-family: 'Arimo', sans-serif;
         position: absolute;
-        top: 45%;
-        right: 250px;
-        font-size: 2.5em;
+        top: 20%;
         color: white;
-        font-weight: 800;
-        text-shadow: 3px 3px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
-    #products .product-description .text {
-      width: 600px;
-      margin: 40px auto 20px; }
-    #products .product-description .buynow {
+        width: 300px;
+        height: 60%;
+        padding: 10px 20px; }
+        #products .product .splash .splash-box .title {
+          font-size: 2em;
+          font-weight: 800;
+          margin-bottom: 20px; }
+        #products .product .splash .splash-box.left {
+          right: 55%; }
+        #products .product .splash .splash-box.right {
+          left: 55%; }
+        #products .product .splash .splash-box.blue {
+          background-color: #00B8FF; }
+        #products .product .splash .splash-box.orange {
+          background-color: #FFB224; }
+        #products .product .splash .splash-box.purple {
+          background-color: #B10EB1; }
+        #products .product .splash .splash-box.green {
+          background-color: #0C920C; }
+    #products .product .product-description .title {
+      font-family: 'Raleway', sans-serif;
+      font-size: 1.8em;
+      font-weight: 300;
+      color: #777;
+      text-align: center;
+      width: 400px;
+      max-width: 800px;
+      margin: 25px auto; }
+    #products .product .product-description .buynow {
       text-align: center; }
+    #products .product .large-block {
+      margin: 40px 0px;
+      border-top: 16px double #D7D9EC;
+      font-size: 1.5em; }
+      #products .product .large-block .left {
+        padding-top: 20px; }
+  #products .buynow .trial {
+    background-color: white;
+    color: #4A9DFF;
+    border: 2px solid #4A9DFF;
+    border-radius: 0; }
+  #products .buynow .buy {
+    color: white;
+    background-color: #4A9DFF;
+    border: 2px solid #4A9DFF;
+    border-radius: 0; }

@@ -47,7 +47,7 @@
 
     .products-menu {
 
-        border-bottom: 1px solid #AAD;
+        border-bottom: 1px solid #C5C5E6;
         padding-top: 50px;
 
         .product-tab {
@@ -58,56 +58,129 @@
             font-weight: bold;
             cursor: pointer;
 
-            &:hover {
+            &:hover, &.selected {
 
                 color: #7E78D2;
             }
+
+
         }
     }
 
-    .product-description {
+    .product {
 
         font-family: 'Raleway', sans-serif;
         color: #888;
         font-size: 1.2em;
+        opacity: 1;
+        transition: opacity 0.2s ease;
+
+        &.faded {
+            opacity: 0
+        }
 
         .splash {
 
             background-color: #DDF;
-            background-image: url('/images/dark-mosaic.png');
             position: relative;
+            height: 500px;
+            background-size: cover;
 
-            img {
-                margin: 50px;
-                width: 300px;
-                height: 300px;
-            }
+            .splash-box {
 
-            .desc {
-
+                font-family: 'Arimo', sans-serif;
                 position: absolute;
-                top: 45%;
-                right: 250px;
-                font-size: 2.5em;
+                top: 20%;
                 color: white;
-                font-weight: 800;
+                width: 300px;
+                height: 60%;
+                padding: 10px 20px;
 
-               text-shadow:
-                   3px 3px 0 #000,
-                 -1px -1px 0 #000,
-                  1px -1px 0 #000,
-                  -1px 1px 0 #000,
-                   1px 1px 0 #000;
+                .title {
+
+                    font-size: 2em;
+                    font-weight: 800;
+                    margin-bottom: 20px;
+                }
+
+                &.left {
+
+                    right: 55%
+                }
+
+                &.right {
+
+                    left: 55%;
+                }
+
+                &.blue {
+                    background-color: #00B8FF;
+                }
+
+                &.orange {
+                    background-color: #FFB224;
+                }
+
+                &.purple {
+                    background-color: #B10EB1;
+                }
+
+                &.green {
+                    background-color: #0C920C;
+                }
             }
         }
 
-        .text {
-            width: 600px;
-            margin: 40px auto 20px;
+        .product-description{
+
+            .title {
+
+                font-family: 'Raleway', sans-serif;
+                font-size: 1.8em;
+                font-weight: 300;
+                color: #777;
+                text-align: center;
+                width: 400px;
+                max-width: 800px;
+                margin: 25px auto;
+            }
+
+            .buynow {
+                text-align: center;
+            }
         }
 
-        .buynow {
-            text-align: center;
+        .large-block {
+
+            margin: 40px 0px;
+            border-top: 16px double #D7D9EC;
+            font-size: 1.5em;
+
+            .left {
+                padding-top: 20px;
+            }
+
+        }
+    }
+
+    .buynow {
+
+        $c: #4A9DFF;;
+
+        .trial {
+
+            background-color: white;
+            color: $c;
+            border: 2px solid $c;
+            border-radius: 0;
+        }
+
+        .buy {
+
+            color: white;
+            background-color: $c;
+            border: 2px solid $c;
+            border-radius: 0;
         }
     }
 }

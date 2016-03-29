@@ -10,32 +10,97 @@
     </div>
 
     <div class='container'>
-
         <div class='products-menu'>
-            <div class='product-tab colorease' ng-repeat='(name, info) in products'>
-                {{ name }}
+            <div class='product-tab colorease' ng-repeat='(name, info) in products'
+             ng-click='select(name)' ng-class='{selected: selected.id == name}'>
+                Property {{ name }}
+            </div>
+        </div>
+    </div>
+
+    <div class='product' ng-class='{faded: fadeout}'>
+        <div class='splash'
+        ng-style='{"background-image": "url(/images/" + selected.image + ")"}'>
+
+        <div class='splash-box  {{selected.side}} {{selected.color}}'>
+            <div class='title'>PROPERTY {{selected.id}}</div>
+            <div class='desc'>Lorem ipsum dolar something something something</div>
+        </div>
+    </div>
+
+    <div class='product-description container'>
+
+        <div class='title'>
+            LEARN HOW <span class='bold'>PRODUCT {{selected.id}}</span> CAN HELP YOU DO VARIOUS THINGS
+        </div>
+
+        <div class='blocks clearfix'>
+            <div class='block col-xs-12 col-md-4'>
+                <div class='title'>
+                    Feature
+                </div>
+                <div class='text'>
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                </div>
+                <br/>
+                <a href='javascript:void(0);'>Learn More ></a>
+            </div>
+
+            <div class='block col-xs-12 col-md-4'>
+                <div class='title'>
+                    Feature
+                </div>
+                <div class='text'>
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                </div>
+                <br/>
+                <a href='javascript:void(0);'>Learn More ></a>
+            </div>
+
+            <div class='block col-xs-12 col-md-4'>
+                <div class='title'>
+                    Feature
+                </div>
+                <div class='text'>
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                </div>
+                <br/>
+                <a href='javascript:void(0);'>Learn More ></a>
             </div>
         </div>
 
-        <div class='product-description'>
-            <div class='splash'>
-                <img src='/images/chart.png'>
+        <div class='large-block clearfix'>
 
-                <span class='desc'>
-                    PRODUCT A
-                </span>
+            <div class='col-xs-12 col-md-6 left'>
+                <img src='/images/sideimage.jpg'>
+            </div>
+            <div class='col-xs-12 col-md-6 right'>
+                <div class='title'>
+                    Feature
+                </div>
+                <div class='text'>
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                    Description of feature. Description of feature. Description of feature.
+                </div>
             </div>
 
-            <div class='text'>
-                Description of Product A. Description of Product A. Description of Product A.
-                Description of Product A. Description of Product A. Description of Product A.
-                Description of Product A. Description of Product A. Description of Product A.
-                Description of Product A. Description of Product A. Description of Product A.
-            </div>
-            <div class='buynow'>
-                <button type='button' class='btn btn-success'>Buy Now</button>
-            </div>
         </div>
 
+
+        <div class='buynow'>
+            <button type='button' class='btn trial'>Download Trial</button>
+            <button type='button' class='btn buy'>Buy Now</button>
+        </div>
     </div>
 </div>
